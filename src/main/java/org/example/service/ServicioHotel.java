@@ -70,4 +70,17 @@ public class ServicioHotel implements IServicioHotel{
     public List<Hotel> listarOrdenado(boolean ascendente) {
         return daoColeccion.listarOrdenado(ascendente);
     }
+
+    @Override
+    public boolean escribirFicheroBinario(Coleccion coleccion) {
+        DaoFicherosImpl.escribirFicheroBinario(coleccion);
+        return true;
+    }
+
+    @Override
+    public Coleccion cargarFicheroBinario() {
+        return DaoFicherosImpl.cargarFicheroBinario();
+    }
+
+
 }

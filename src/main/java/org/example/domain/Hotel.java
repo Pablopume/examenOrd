@@ -5,8 +5,9 @@ import org.example.common.ValoracionException;
 
 import java.io.Serializable;
 import java.util.Calendar;
+import java.util.Comparator;
 
-public class Hotel implements Serializable {
+public class Hotel implements Serializable{
     private String nombre;
     private String provincia;
     private int valoracion;
@@ -57,4 +58,7 @@ public class Hotel implements Serializable {
         Comprobacion.valoracionOk(categoria);
         this.categoria = categoria;
     }
+
+
+
 }

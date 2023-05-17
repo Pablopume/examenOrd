@@ -21,12 +21,16 @@ public class GestionColeccion {
             switch (opcion) {
                 case 1:
                     anyadirAlojamiento();
+                case 2:
             }
 
 
         } while (opcion != 7);
     }
 
+    public void escribir(){
+        this.servicioHotel.escribirFicheroBinario(this.servicioHotel.getColeccion());
+    }
 
     public static int elegirOpcionMenu() {
         Scanner sc = new Scanner(System.in);

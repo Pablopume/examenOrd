@@ -29,4 +29,7 @@ public interface IServicioHotel {
 
     List<Hotel> listarOrdenado(boolean ascendente);
 
+     boolean escribirFicheroBinario(Coleccion coleccion);
+
+    Coleccion cargarFicheroBinario();
 }
